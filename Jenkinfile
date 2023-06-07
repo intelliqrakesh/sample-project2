@@ -7,19 +7,16 @@ pipeline {
                 echo 'code devolop'
             }
         }
+              
                 stage('build') {
             steps {
                 echo 'build project'
             }
+            
         }
-         stage('test') {
+          stage('test') {
             steps {
-                echo 'testing'
-            }
-        }
-         stage('prod') {
-            steps {
-                echo 'live prod'
+                echo 'test project'
             }
         }
     }
